@@ -1,0 +1,293 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}template{display:none}[hidden]{display:none}
+
+:root {
+  --color-primary: #071629;
+  --color-white: #ffffff;
+  --color-salmon: #ff6565;
+  --font-family-logo: 'Spin Cycle', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-family-base: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-size: 1.5rem;
+  --font-size-title: 2.8rem;
+  --font-weight-semibold: 600;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('icons/holberton_school-icon.eot');
+  src:  url('icons/holberton_school-icon.eot') format('embedded-opentype'),
+    url('icons/holberton_school-icon.ttf') format('truetype'),
+    url('icons/holberton_school-icon.woff') format('woff'),
+    url('icons/holberton_school-icon.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Spin Cycle';
+  src: url(Fonts/Spin-Cycle-OT/spincycle_ot.otf);
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url(Fonts/Source-Sans-Pro/SourceSansPro-Regular.otf);
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url(Fonts/Source-Sans-Pro/SourceSansPro-Bold.otf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url(Fonts/Source-Sans-Pro/SourceSansPro-Semibold.otf);
+  font-weight: 600;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family-base);
+}
+
+.header {
+  height: 100vh;
+  background-image: url(images/headphones_hero_1.jpg);
+  background-repeat: no-repeat;
+  background-position: 35% 0%;
+  padding-top: 2rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header-nav {
+  text-align: center;
+  align-items: flex-start;
+}
+
+.header-main {
+  text-align: center;
+  margin: 1.5rem;
+}
+
+.header-banner {
+  font-size: var(--font-size);
+  color: var(--color-white);
+}
+
+.header-banner h1 {
+  margin-bottom: 0.6rem;
+}
+
+.header-banner p {
+  font-weight: var(--font-weight-semibold);
+  padding: 0 4rem;
+  margin-top: 0;
+  font-size: var(--font-size);
+  color: var(--color-white);
+  line-height: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+a {
+  background-color: var(--color-salmon);
+  padding: 1rem 2.5rem;
+  color: var(--color-white);
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 50px;
+}
+
+.header-hero {
+  color: var(--color-white);
+  font-size: var(--font-size);
+  line-height: 2.5rem;
+  margin-top: 6rem;
+}
+
+.about {
+  margin: 0 2rem;
+}
+
+.section-header {
+  text-align: center;
+  padding-top: 6rem;
+}
+
+.section-header h2 {
+  font-size: var(--font-size-title);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: 3rem;
+  margin: 0 2rem;
+}
+
+.section-header p {
+  font-size: var(--font-size);
+  line-height: 2.5rem;
+  padding: 0 1.5rem;
+}
+
+.section-list {
+  text-align: center;
+  padding-bottom: 6rem;
+}
+
+.section-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.section-list li {
+  margin-top: 5rem;
+  font-size: var(--font-size);
+  padding: 0 6rem;
+  line-height: 2.5rem;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  color: var(--color-salmon);
+  font-size: 10rem;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-sound:before {
+  content: "\e90e";
+}
+
+.icon-video:before {
+  content: "\e910";
+}
+
+.icon-music:before {
+  content: "\e90d";
+}
+
+.icon-hearing:before {
+  content: "\e909";
+}
+
+.results {
+  margin: 0;
+  background-image: url(images/headphones_hero_2.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.section-list h3 {
+  font-weight: var(--font-weight-semibold);
+}
+
+.results-pentagone {
+  background-image: url(images/pentagone.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+
+.results-pentagone h3 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.contact {
+  margin-bottom: 6rem;
+}
+
+.contact-form-field {
+  position: relative;
+  padding: 18px 0 0;
+  margin-top: 19px;
+  width: 90vw;
+  margin-left: 2rem;
+  color: var(--color-primary);
+}
+
+.contact-form-field input {
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #d4d6da;
+  outline: 0;
+  font-size: 1.3rem;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+
+.contact-form-field input::placeholder {
+  color: transparent;
+}
+
+.contact-form-field input:placeholder-shown ~ label {
+  font-size: var(--font-size);
+  cursor: text;
+  top: 20px;
+}
+
+.contact-form-field label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: var(--font-size);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-primary);
+}
+
+.contact-form-field input:focus ~ label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+}
+
+.contact-form-field input:focus {
+  padding-bottom: 6px;
+  border-width: 3px;
+}
+
+.contact button {
+  background-color: var(--color-salmon);
+  padding: 1rem 2.5rem;
+  color: var(--color-white);
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 50px;
+  border: none;
+  font-size: var(--font-size);
+  margin-top: 5rem;
+  margin-left: 29%;
+  margin-right: 29%;
+}
+}

@@ -1,1 +1,1 @@
-# holbertonschool-headphones
+Implementation of a webpage design using HTML and CSS only
